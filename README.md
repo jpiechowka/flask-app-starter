@@ -25,7 +25,20 @@ CERT_GENERATION_CMD_TIMEOUT_SECONDS = 60
 # TLS Cert generation config END ################
 ```
 
-#### OpenSSL self-signed certificate default generation command
+### OpenSSL self-signed certificate default generation command
 ```
 openssl req -x509 -nodes -newkey rsa:8192 -keyout cert/key.pem -out cert/cert.pem -days 30 -sha512 -subj '/CN=localhost'
 ```
+
+### Security headers applied by default in ```headers.py``` file
+* Content-Security-Policy (CSP)
+* Feature-Policy
+* Strict-Transport-Security (HSTS)
+* X-Frame-Options
+* X-Content-Type-Options
+* X-XSS-Protection
+* Referrer-Policy
+* Various Cache headers
+* X-DNS-Prefetch-Control
+* X-Permitted-Cross-Domain-Policies
+* Spoofed Server header
