@@ -13,7 +13,7 @@ CERT_DIR = "cert"
 CERT_FILENAME = "cert.pem"
 KEY_FILENAME = "key.pem"
 
-CERT_KEY_SIZE = 1024 * 8
+CERT_KEY_SIZE = 1024 * 8  # 8192
 CERT_VALIDITY_DAYS = 30
 COMMON_NAME = "localhost"
 
