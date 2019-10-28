@@ -31,7 +31,7 @@ openssl req -x509 -nodes -newkey rsa:8192 -keyout cert/key.pem -out cert/cert.pe
 ```
 
 ### Default security headers
-Security headers applied by default in ```headers.py``` file:
+Security headers applied by default in ```security/headers.py``` file:
 * Content-Security-Policy (CSP)
 * Feature-Policy
 * Strict-Transport-Security (HSTS)
